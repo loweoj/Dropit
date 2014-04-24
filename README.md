@@ -17,8 +17,6 @@ Dropit is a stupidly simple jQuery dropdown plugin. It was modified to version 2
     });
     </script>
 
-For more examples [see the demo](http://dev7studios.com/demo/jquery-currency).
-
 ##Settings
 
 The following list outlines the settings and their defualt values:
@@ -28,7 +26,7 @@ The following list outlines the settings and their defualt values:
         submenuEl: 'ul', // The submenu element
         triggerEl: 'a', // The trigger element
         triggerParentEl: 'li', // The trigger parent element
-        openClass: 'dropdown--open',
+        openClass: 'dropdown--open', // The class added when dropdown open
         afterLoad: function(){}, // Triggers when plugin has loaded
         beforeShow: function(){}, // Triggers before submenu is shown
         afterShow: function(){}, // Triggers after submenu is shown
@@ -47,5 +45,3 @@ The following list outlines the settings and their defualt values:
     </div>
 </div>
 ```
-
-<!-- Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs). -->
