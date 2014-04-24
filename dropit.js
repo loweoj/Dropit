@@ -27,7 +27,7 @@
 
                     // Hide initial submenus
                     $el.addClass('dropdown')
-                        .find(settings.triggerEl).addClass('dropdown__toggle').end()
+                        .find('>'+settings.triggerEl).addClass('dropdown__toggle').end()
                         .find(settings.submenuEl).addClass('dropdown__menu').hide();
 
                     // Open on click
