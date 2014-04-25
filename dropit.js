@@ -15,7 +15,6 @@
         var methods = {
 
             init : function(options) {
-                self = methods;
                 this.dropit.settings = $.extend({}, this.dropit.defaults, options);
                 return this.each(function() {
                     var $el = $(this),
@@ -33,10 +32,10 @@
                     // Open on click
                     $el.on(settings.action, ' > '+ settings.triggerEl +'', function(e) {
                         if($(this).parents(settings.triggerParentEl).hasClass(settings.openClass)) {
-                            self.hideDropdowns(this, settings);
+                            methods.hideDropdowns(this, settings);
                             return false
                         }
-                        self.hideDropdowns(this, settings);
+                        methods.hideDropdowns(this, settings);
 
                         settings.beforeShow.call(this);
                         $(this).parents(settings.triggerParentEl)
